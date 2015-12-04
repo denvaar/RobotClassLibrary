@@ -48,7 +48,7 @@ _See driver.py for more examples._
 ![](./doc/uml_diagram.jpg)
 
 ### Project Structure ###
-```src/```   -- Source code directory.
-```tests/``` -- Unit tests.
-```doc/```   -- Documentation directory.
+```src/``` Source code directory.  
+```tests/``` Unit tests.  
+```doc/``` Documentation directory.  
 
