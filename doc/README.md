@@ -16,10 +16,30 @@ will not accept a new task until it's finished.
 ### Requirements ###
 - Python2.7
 
-### Setup & Usage ###
+### Setup ###
 1. Clone or download the git repository package: https://github.com/denvaar/RobotClassLibrary
 2. Add the ```src``` directory to your PYTHONPATH environment variable.
 3. Run the example script: ```python src/driver.py```
+
+### Example Usage ###
+```python
+from masterRobot import MasterRobot
+from helperRobot import HelperRobot
+from robotMediator import RobotMediator
+
+# Create a mediator
+mediator = RobotMediator()
+# Create a master robot and register it with the mediator
+master = MasterRobot(mediator) 
+# Do the same with the helper
+helper = HelperRobot(mediator)
+
+# Assign tasks with doWork() method.
+master.doWork()
+# Finish tasks with finishWork() method.
+master.finishWork()
+```
+_See driver.py for more examples._
 
 ### Design Decisions ###
 - __Mediator__ design pattern is used to decouple MasterRobot from HelperRobot. This pattern offers a simple and effective solution to allow these robots to communicate with each other without having to know about each other.
