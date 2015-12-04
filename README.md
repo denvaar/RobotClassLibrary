@@ -46,3 +46,9 @@ _See driver.py for more examples._
 - Both types of robots implement the Robot __interface__. Programming to an interface rather than an implementation is an effective way to decouple the underlying design from the specific implementation. Users may wish to extend the class library to include more types of robots, in which case they may implement the Robot interface.
 - __Inheritance__ and __aggregation__ are used among classes.
 ![](./doc/uml_diagram.jpg)
+
+### Project Structure ###
+```src/```   -- Source code directory.
+```tests/``` -- Unit tests.
+```doc/```   -- Documentation directory.
+
