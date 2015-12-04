@@ -44,5 +44,5 @@ _See driver.py for more examples._
 ### Design Decisions ###
 - __Mediator__ design pattern is used to decouple MasterRobot from HelperRobot. This pattern offers a simple and effective solution to allow these robots to communicate with each other without having to know about each other.
 - Both types of robots implement the Robot __interface__. Programming to an interface rather than an implementation is an effective way to decouple the underlying design from the specific implementation. Users may wish to extend the class library to include more types of robots, in which case they may implement the Robot interface.
-- __Inheritance__ and __aggregation__ is used among classes.
+- __Inheritance__ and __aggregation__ are used among classes.
 ![](./doc/uml_diagram.jpg)
